@@ -1,0 +1,241 @@
+items:
+  #$# Lobby Items.
+  unranked: '&9Unranked Queue'
+  ranked: '&aRanked Queue'
+  ffa: '&eFFA'
+  kiteditor: '&cEdit Kits'
+  spectator: '&aToggle Spectator ON'
+  party-create: '&aCreate party'
+  #$# Party Items.
+  party-leave: '&cLeave Party' # Flint & Steel
+  party-events: '&6Party Events' # Stone Sword
+  party-list-members: '&eList Party Members' # Gold Sword
+  party-fight-other-parties: '&aFight Other Parties' # Nether Star
+  #$# Queue Items.
+  queue-leave: '&eRight click to leave the queue'
+  #$# Spectator Mode
+  spectator-off: '&aToggle Spectator OFF' # Redstone Torch
+  spectator-teleport: '&aTeleport to players' # Compass
+  spectator-list: '&aOpen Match List' # Paper
+  spectator-ffa: '&cSpectate FFA' # Golden Axe
+
+ui:
+  statistics:
+    title: '&aStatistics'
+  leaderboard:
+    title: '&aLeaderboard'
+  player-inventory:
+    title: '&e<player>`s inventory'
+    health:
+      item-title: '&cHealth: <health> ❤'
+    hunger:
+      item-title: '&eHunger: <hunger>'
+    effects:
+      item-title: '&6Potion Effects'
+
+  duel:
+    kit-selector:
+      title: '&aSelect Kit'
+      item-title: '&b<kit-name>'
+
+  arena-selector:
+    title: '&aSelect Arena'
+    arena:
+      item-title: '&b<arena-name>'
+    select:
+      item-title: '&eFinish map selecting'
+
+  selector:
+    title: '&9Select a kit - <type> Queue'
+    item-title: '&a<kit-name>'
+    item-lore:
+      - '&eIn queue: &3<queue-online>'
+      - '&eIn match: &3<match-online>'
+
+  spectator:
+    match-list:
+      title: '&aSpectator GUI'
+      item-title: '&a<player1> vs <player2>'
+      item-lore:
+        - '&bType: &3<type>'
+        - '&bKit: &3<kit>'
+    teleporter:
+      title: '&aPlayer teleporter'
+      item-title: '&b<player>'
+
+  editor:
+    kit-selector:
+      title: '&bEdit Kits'
+      item-title: '&a<kit-name>'
+    extra-items:
+      title: '&bExtras for <kit> kit'
+    kit-manager:
+      title: '&eManage &6<kit>&e kit'
+      save:
+        item-title: '&eSave kit &6<custom-kit-name>'
+      load:
+        item-title: '&eLoad kit &6<custom-kit-name>'
+      delete:
+        item-title: '&eDelete kit &6<custom-kit-name>'
+
+  party:
+    list:
+      title: '&7Parties'
+      item-title: '&3<owner> &7(<count>)'
+    event:
+      title: '&7Select an event'
+      ffa:
+        item-title: '&bParty FFA'
+      split:
+        item-title: '&bParty Split'
+
+messages:
+  global:
+    no-perm: '&e⚠ &cUnknown command or you do not have the required permissions.'
+    player-not-found: '&eThis player is not online or never played at this server!'
+
+  database:
+    error: 'No data from MySQL in config.yml, no startup possible, shutdown!'
+
+  duel:
+    help:
+      - '&7======================================='
+      - '&b/duel <player>'
+      - '&b/duel accept <player>'
+      - '&b/duel decline <player>'
+      - '&7======================================='
+
+    player-busy: '&3[Duel]&6 <player>&e is currently busy!'
+    sent: '&3[Duel]&6 You sent duel request to &e<player>'
+    sent-self: '&3[Duel]&e <player>&6 has sent you an invitation with kit &2<kit>&6. Do you accept?'
+    declined: '&3[Duel]&e <player>&6 declined your duel request'
+    declined-self: '&3[Duel]&e You`ve declined duel request from <player>'
+    requests-empty: '&3[Duel]&6 You don`t have any pending duel requests!'
+    cannot-yourself: '&3[Duel]&e You cannot send request for yourself!'
+
+  ffa:
+    help:
+      - '&7======================================='
+      - '&b/ffa join'
+      - '&b/ffa leave'
+      - '&7======================================='
+
+    sent: '&6[FFA]&e You have been sent to the FFA arena'
+    sent-as-spectator: '&6[FFA]&e You have been sent to the FFA arena as spectator'
+    leave: '&6[FFA]&e You have been left FFA arena'
+    already-in: '&6[FFA]&e You`re already at FFA!'
+    not-in: '&6[FFA]&e You`re not at FFA!'
+    join-error: '&6[FFA]&e You cannot join FFA arena right now!'
+
+  queue:
+    added: '&9[Duel]&e You have been added to the &3<queue-type>&e queue, please wait while we are looking for an opponent ...'
+    removed: '&eYou have left matchmaking ...'
+    elo-changes: '&eSearching in Elo range: &a[<elo1> -> <elo2>]'
+
+  spectator:
+    not-in-match: '&6[Spectator]&e You need to log into any match to open this menu'
+
+  match:
+    first-slot: '&cYou can`t drop that while you`re holding it in slot 1'
+    opponent: '&eStarting match against &a<player>&e with kit &3<kit>'
+    opponent-ranked: '&eStarting ranked match against &a<player>(<elo>(<difference>&a))&e with kit &3<kit>'
+    timer: '&9Match starting &3<seconds>&9 second(s) ... '
+    now-playing: '&aNow playing in: &d<map>'
+    started: '&aMatch starting now!'
+    reminder: '&c&lReminder:&7 Butterfly clicking is discouraged and could result in a ban.&c Use at own risk.'
+    winner: '&eWinner: <winner>'
+    inventory-message: '&bInventories (click to view): '
+    map-rate: '&9Did you enjoy playing this map? Click on the selection boxes to rate it: '
+    enderpearl-cannot-use: '&9&lCooldown)&7 You cannot use &aEnderpearl&7 for &a<seconds> seconds&7.'
+    elo-changes: '&dElo changes: &a<winner> +<eloToAdd> (<newEloWinner>) &7/ &c<loser> -<eloToRemove> (<newEloLoser>)'
+    spectator-joined: 'You`ve started spectating match'
+    spectator-leaved: 'You`ve left spectating'
+    map-rated: '&aYou successfully rated the map!'
+
+  party-match:
+    ffa-opponent: '&eStarting Party FFA match with kit &3<kit>'
+    split-opponent: '&eStarting Party Split match against &a<players>&e with kit &3<kit>'
+    party-vs-party-opponent: '&eStarting Party vs Party match against &a<player>`s&e party with kit &3<kit>'
+
+  ping:
+    self: '&6Your ping: &e<ping> ms'
+    target: '<player>&6`s ping: &e<ping> ms'
+    difference: '&ePing difference: &6<difference> ms'
+
+  party:
+    help:
+      - '&7======================================='
+      - '&b/party invite <player>'
+      - '&b/party remove <player>'
+      - '&b/party accept <player>'
+      - '&b/party decline <player>'
+      - '&7======================================='
+
+    list:
+      - '&7&m-------------------------------------'
+      - '&eLeader: &6<owner>'
+      - '&eMember &6(<count>)&e: &6<members>'
+      - '&7&m-------------------------------------'
+
+    created:
+      - '&3[Party]&a Successfully created a party'
+      - '&3[Party]&6 Use &b/party invite&6 to invite players'
+
+    disbanded: '&3[Party]&e The party has been disbanded'
+
+    not-party-owner: '&3[Party]&e You`re not party owner!'
+    size-too-small: '&3[Party]&e The party size < 2!'
+
+    duel-request: '&3<owner>&b`s party &3(<count>)&b has requested a duel request with kit &3<kit>&b.'
+    duel-request-self: 'Successfully sent &3<owner>&b`s party &3(<count>)&b a &3<kit>&b duel request.'
+    cant-remove-yourself: '&3[Party]&e You can not remove yourself'
+    cant-invite-yourself: '&3[Party]&e You can not invite yourself'
+    already-in-party: '&3[Party]&e This player already in party!'
+    party-need-to-create: '&3[Party]&e Create a party to begin with'
+    party-unknown: '&3[Party]&e This player doesn`t have a party'
+    party-full: '&3[Party]&e Party is full (max: 40)'
+    player-no-requests: '&3[Party]&e You don`t have any party requests'
+    invite-sent: '&3[Party]&e Party invite from <player>!'
+    invite-sent-self: '&3[Party]&e Party invite has been sent to <player>'
+    player-accepted: '&3[Party]&e <player> joined your party'
+    player-accepted-self: '&3[Party]&e You`ve joined a <player> party'
+    player-declined: '&3[Party]&e <player> declined your party invite'
+    player-declined-self: '&3[Party]&e You`ve declined a party invite from <player>'
+    player-not-in-party: '&3[Party]&e This player is not in party'
+    player-removed: '&3[Party]&e You were removed from party'
+    player-removed-self: '&3[Party]&e You are successfully removed <player> from your party'
+    player-leaved-self: '&3[Party]&e <player> leaved from your party'
+    party-disbanded: '&3[Party]&e Party disbanded!'
+
+admin:
+  group:
+    help:
+      - '&7======================================='
+      - '&b/group set <player> <group>'
+      - '&b/group list'
+      - '&7======================================='
+    already-exist: '&cУ этого игрока уже установлена группа <group>!'
+    not-found: '&cГруппы <group> не существует! Для просмотра списка групп пропишите: /group list'
+    success-setted: '&aГруппа <group> успешно установлена для игрока <player>!'
+    success-setted-self: '&b<player> updated your group to <group>&b!'
+
+setup:
+  help:
+    - '&7======================================='
+    - '&b/setup arena &3<arena-name>'
+    - '&b/setup firstPlayerSpawn &3<arena-name>'
+    - '&b/setup secondPlayerSpawn &3<arena-name>'
+    - '&b/setup spectatorSpawn &3<arena-name>'
+    - '&b/setup lobby'
+    - '&b/setup editor'
+    - '&b/setup ffa'
+    - '&7======================================='
+
+  arena-created: '&aАрена <arena> успешно создана! Не забудьте добавить, остальные данные. После добавления всех данных, необходимо перезапустить сервер.'
+  arena-not-exist: '&cАрена <arena> не существует! Создайте её - /setup arena <arena-name>'
+  location-set: '&aЛокация "<location>" установлена!'
+
+constant:
+  click-here: '&a[Click here]'
+  accept: '&a&lYES.'
+  decline: '&c&lNO.'

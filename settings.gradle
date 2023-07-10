@@ -1,0 +1,4 @@
+rootProject.name = 'practice'
+include 'lounge-lobby'
+include 'lounge-api'
+

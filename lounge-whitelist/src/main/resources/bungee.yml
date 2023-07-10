@@ -1,0 +1,3 @@
+name: LoungeWhitelist
+version: '${version}'
+main: me.nikonbite.whitelist.LoungeWhitelist

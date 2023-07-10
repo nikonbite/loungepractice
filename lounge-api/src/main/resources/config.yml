@@ -1,0 +1,10 @@
+database:
+  host: 'localhost'
+  user: 'root'
+  pass: 'root'
+  data: 'lounge'
+
+spawn-locations:
+  lobby: ''
+  editor: ''
+  ffa: ''

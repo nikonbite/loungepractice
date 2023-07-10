@@ -1,0 +1,5 @@
+name: LoungePractice
+version: '${version}'
+main: me.nikonbite.practice.LoungePractice
+authors: [ Nikonbite ]
+load: POSTWORLD
